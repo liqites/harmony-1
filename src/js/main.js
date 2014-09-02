@@ -97,6 +97,7 @@ function init()
 //	menu.save.addEventListener('touchend', onMenuSave, false);
 	menu.exportImage.addEventListener('click', onMenuExportImage, false);
 //	menu.exportImage.addEventListener('touchend', onMenuExportImage, false);
+	menu.resetBrush.addEventListener('click', onMenuResetBrush, false);
 	menu.clear.addEventListener('click', onMenuClear, false);
 //	menu.clear.addEventListener('touchend', onMenuClear, false);
 	menu.about.addEventListener('click', onMenuAbout, false);
@@ -424,6 +425,11 @@ function onMenuExportImage()
 	window.open(flattenCanvas.toDataURL('image/png'),'mywindow');
 }
 
+function onMenuResetBrush()
+{
+	rebuildBrush();
+}
+
 function onMenuClear()
 {
 	if (!confirm("Are you sure?"))
@@ -601,13 +607,18 @@ function onCanvasTouchEnd( event )
 	}
 }
 
+function rebuildBrush()
+{
+	brush.destroy();
+	brush = eval("new " + BRUSHES[menu.selector.selectedIndex] + "(context)");
+}
+
 function onResetBrushTouchEnd( event )
 {
 	if (event.touches.length == 0)
 	{
 		event.preventDefault();
-		brush.destroy();
-		brush = eval("new " + BRUSHES[menu.selector.selectedIndex] + "(context)");
+		rebuildBrush();
 		window.removeEventListener('touchend', onResetBrushTouchEnd, false);
 		
 		if (STORAGE)

@@ -13,6 +13,7 @@ Menu.prototype =
 	selector: null,
 	save: null,
 	exportImage: null,
+	resetBrush: null,
 	clear: null,
 	about: null,
 	
@@ -69,7 +70,8 @@ Menu.prototype =
 		
 		this.save = document.createElement("span"); //getElementById('save');
 		this.save.className = 'button';
-		this.save.innerHTML = 'Save';
+		this.save.innerHTML = 'S';
+		this.save.style.marginRight = '16px';
 		this.container.appendChild(this.save);
 		
 		space = document.createTextNode(" | ");
@@ -77,19 +79,26 @@ Menu.prototype =
 		
 		this.exportImage = document.createElement("span"); //getElementById('exportImage');
 		this.exportImage.className = 'button';
-		this.exportImage.innerHTML = 'Export';
-		this.exportImage.style.marginRight = '30px';
+		this.exportImage.innerHTML = 'E';
+		this.exportImage.style.marginLeft = '16px';
+		this.exportImage.style.marginRight = '16px';
 		this.container.appendChild(this.exportImage);
-		
+
+		this.resetBrush = document.createElement("span"); //getElementById('exportImage');
+		this.resetBrush.className = 'button';
+		this.resetBrush.innerHTML = 'R';
+		this.resetBrush.style.marginRight = '16px';
+		this.container.appendChild(this.resetBrush);
+
 		this.clear = document.createElement("Clear");
 		this.clear.className = 'button';
-		this.clear.innerHTML = 'Clear';
-		this.clear.style.marginRight = '30px';
+		this.clear.innerHTML = 'C';
+		this.clear.style.marginRight = '16px';
 		this.container.appendChild(this.clear);
 
 		this.about = document.createElement("About");
 		this.about.className = 'button';
-		this.about.innerHTML = 'About';
+		this.about.innerHTML = '?';
 		this.container.appendChild(this.about);
 	},
 	
