@@ -18,19 +18,24 @@ Menu.prototype =
 	
 	init: function()
 	{
+		function newColorWell(width, height, identifier)
+		{
+			var well = document.createElement("canvas");
+			well.style.cursor = 'pointer';
+			well.width = width;
+			well.height = height;
+			well.className = 'well ' + identifier;
+			return well;
+		}
+
 		var option, space, separator, color_width = 48, color_height = 20;
 
 		this.container = document.createElement("div");
 		this.container.className = 'gui menu';
 		this.container.style.position = 'absolute';
 		this.container.style.top = '0px';
-		
-		this.foregroundColor = document.createElement("canvas");
-		this.foregroundColor.style.marginBottom = '-6px';
-		this.foregroundColor.style.cursor = 'pointer';
-		this.foregroundColor.width = color_width;
-		this.foregroundColor.height = color_height;
-		this.foregroundColor.className = 'well';
+
+		this.foregroundColor = newColorWell(color_width, color_height, 'fg-color');
 		this.container.appendChild(this.foregroundColor);
 		
 		this.setForegroundColor( COLOR );
@@ -38,13 +43,7 @@ Menu.prototype =
 		space = document.createTextNode(" ");
 		this.container.appendChild(space);
 
-		this.backgroundColor = document.createElement("canvas");
-		this.backgroundColor.style.marginBottom = '-6px';
-		this.backgroundColor.style.marginRight = '30px';
-		this.backgroundColor.style.cursor = 'pointer';
-		this.backgroundColor.width = color_width;
-		this.backgroundColor.height = color_height;
-		this.backgroundColor.className = 'well';
+		this.backgroundColor = newColorWell(color_width, color_height, 'bg-color');
 		this.container.appendChild(this.backgroundColor);
 
 		this.setBackgroundColor( BACKGROUND_COLOR );
