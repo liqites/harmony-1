@@ -104,25 +104,11 @@ Menu.prototype =
 
     setForegroundColor: function( color )
     {
-        /*
-        var context = this.foregroundColor.getContext("2d");
-        context.fillStyle = 'rgb(' + color[0] + ', ' + color[1] +', ' + color[2] + ')';
-        context.fillRect(0, 0, this.foregroundColor.width, this.foregroundColor.height);
-        context.fillStyle = 'rgba(0, 0, 0, 0.1)';
-        context.fillRect(0, 0, this.foregroundColor.width, 1);
-        */
         this.foregroundColor.style.backgroundColor = 'rgb(' + color[0] + ', ' + color[1] +', ' + color[2] + ')';
     },
 
     setBackgroundColor: function( color )
     {
-        /*
-        var context = this.backgroundColor.getContext("2d");
-        context.fillStyle = 'rgb(' + color[0] + ', ' + color[1] +', ' + color[2] + ')';
-        context.fillRect(0, 0, this.backgroundColor.width, this.backgroundColor.height);
-        context.fillStyle = 'rgba(0, 0, 0, 0.1)';
-        context.fillRect(0, 0, this.backgroundColor.width, 1);
-        */
         this.backgroundColor.style.backgroundColor = 'rgb(' + color[0] + ', ' + color[1] +', ' + color[2] + ')';
     }
 }
