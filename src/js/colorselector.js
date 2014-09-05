@@ -105,7 +105,7 @@ ColorSelector.prototype =
 
         var label = document.createElement("label");
         label.htmlFor = "hueInput";
-        label.innerHTML = " Hue";
+        label.textContent = " Hue";
 
         this.hueInput = document.createElement("input");
         this.hueInput.type = "text";
@@ -119,7 +119,7 @@ ColorSelector.prototype =
 
         label = document.createElement("label");
         label.htmlFor = "saturationInput";
-        label.innerHTML = " Saturation";
+        label.textContent = " Saturation";
 
         this.saturationInput = document.createElement("input");
         this.saturationInput.type = "text";
@@ -133,7 +133,7 @@ ColorSelector.prototype =
 
         label = document.createElement("label");
         label.htmlFor = "luminosityInput";
-        label.innerHTML = " Luminosity";
+        label.textContent = " Luminosity";
 
         this.luminosityInput = document.createElement("input");
         this.luminosityInput.type = "text";

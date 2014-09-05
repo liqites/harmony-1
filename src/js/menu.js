@@ -59,7 +59,7 @@ Menu.prototype =
         {
             option = document.createElement("option");
             option.id = i;
-            option.innerHTML = BRUSHES[i].toUpperCase();
+            option.textContent = BRUSHES[i].toUpperCase();
             this.selector.appendChild(option);
         }
 
@@ -68,37 +68,37 @@ Menu.prototype =
         space = document.createTextNode(" ");
         this.container.appendChild(space);
 
-        this.save = document.createElement("span"); //getElementById('save');
+        this.save = document.createElement("span");
         this.save.className = 'button';
-        this.save.innerHTML = 'S';
+        this.save.textContent = 'S';
         this.save.style.marginRight = '16px';
         this.container.appendChild(this.save);
 
         space = document.createTextNode(" | ");
         this.container.appendChild(space);
 
-        this.exportImage = document.createElement("span"); //getElementById('exportImage');
+        this.exportImage = document.createElement("span");
         this.exportImage.className = 'button';
-        this.exportImage.innerHTML = 'E';
+        this.exportImage.textContent = 'E';
         this.exportImage.style.marginLeft = '16px';
         this.exportImage.style.marginRight = '16px';
         this.container.appendChild(this.exportImage);
 
-        this.resetBrush = document.createElement("span"); //getElementById('exportImage');
+        this.resetBrush = document.createElement("span");
         this.resetBrush.className = 'button';
-        this.resetBrush.innerHTML = 'R';
+        this.resetBrush.textContent = 'R';
         this.resetBrush.style.marginRight = '16px';
         this.container.appendChild(this.resetBrush);
 
         this.clear = document.createElement("Clear");
         this.clear.className = 'button';
-        this.clear.innerHTML = 'C';
+        this.clear.textContent = 'C';
         this.clear.style.marginRight = '16px';
         this.container.appendChild(this.clear);
 
         this.about = document.createElement("About");
         this.about.className = 'button';
-        this.about.innerHTML = '?';
+        this.about.textContent = '?';
         this.container.appendChild(this.about);
     },
 
