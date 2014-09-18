@@ -430,7 +430,8 @@ function onMenuExportImage()
 {
     // window.open(canvas.toDataURL('image/png'),'mywindow');
     flatten();
-    window.open(flattenCanvas.toDataURL('image/png'),'mywindow');
+    //window.open(flattenCanvas.toDataURL('image/png'),'mywindow');
+    Canvas2Image.saveAsPNG(flattenCanvas);
 }
 
 function onMenuResetBrush()
