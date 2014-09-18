@@ -59,7 +59,7 @@ Menu.prototype =
         {
             option = document.createElement("option");
             option.id = i;
-            option.textContent = BRUSHES[i];//BRUSHES[i].toUpperCase();
+            option.textContent = BRUSHES_CN[i];//BRUSHES[i].toUpperCase();
             this.selector.appendChild(option);
         }
 

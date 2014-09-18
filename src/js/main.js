@@ -1,6 +1,7 @@
 const REV = 6,
        //BRUSHES = ["web", "vmirrorweb", "hmirrorweb", "", "sketchy", "vmirrorsketchy", "hmirrorsketchy", "", "shaded", "vmirrorshaded", "hmirrorshaded", "", "simple", "vmirrorsimple", "hmirrorsimple", "", "chrome", "fur", "longfur", "", "squares", "ribbon", "", "circles", "grid"],
-        BRUSHES = ["web","sketchy","vmirrorsketchy", "hmirrorsketchy", "", "shaded", "vmirrorshaded", "hmirrorshaded", "", "simple","chrome", "fur", "longfur", "", "squares", "ribbon", ""];
+        BRUSHES = ["simple","sketchy","fur","squares","ribbon","hmirrorsketchy"];
+        BRUSHES_CN = ["简笔","素描","发丝","方块","绸带","对称素描"]
 
     USER_AGENT = navigator.userAgent.toLowerCase();
 
