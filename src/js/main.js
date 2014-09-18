@@ -1,6 +1,7 @@
 const REV = 6,
        //BRUSHES = ["web", "vmirrorweb", "hmirrorweb", "", "sketchy", "vmirrorsketchy", "hmirrorsketchy", "", "shaded", "vmirrorshaded", "hmirrorshaded", "", "simple", "vmirrorsimple", "hmirrorsimple", "", "chrome", "fur", "longfur", "", "squares", "ribbon", "", "circles", "grid"],
         BRUSHES = ["web","sketchy","vmirrorsketchy", "hmirrorsketchy", "", "shaded", "vmirrorshaded", "hmirrorshaded", "", "simple","chrome", "fur", "longfur", "", "squares", "ribbon", ""];
+
     USER_AGENT = navigator.userAgent.toLowerCase();
 
 var SCREEN_WIDTH = window.innerWidth,
