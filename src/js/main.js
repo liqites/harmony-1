@@ -75,13 +75,13 @@ function init()
 
     palette = new Palette();
 
-    foregroundColorSelector = new ColorSelector(palette);
-    foregroundColorSelector.addEventListener('change', onForegroundColorSelectorChange, false);
-    container.appendChild(foregroundColorSelector.container);
+    //foregroundColorSelector = new ColorSelector(palette);
+    //foregroundColorSelector.addEventListener('change', onForegroundColorSelectorChange, false);
+    //container.appendChild(foregroundColorSelector.container);
 
-    backgroundColorSelector = new ColorSelector(palette);
-    backgroundColorSelector.addEventListener('change', onBackgroundColorSelectorChange, false);
-    container.appendChild(backgroundColorSelector.container);
+    //backgroundColorSelector = new ColorSelector(palette);
+    //backgroundColorSelector.addEventListener('change', onBackgroundColorSelectorChange, false);
+    //container.appendChild(backgroundColorSelector.container);
 
     function noScroll(event) {
         event.preventDefault();
@@ -89,14 +89,14 @@ function init()
 
     menu = new Menu();
     menu.container.addEventListener('touchmove', noScroll, false);
-    menu.foregroundColor.addEventListener('click', onMenuForegroundColor, false);
-    menu.backgroundColor.addEventListener('click', onMenuBackgroundColor, false);
+    //menu.foregroundColor.addEventListener('click', onMenuForegroundColor, false);
+    //menu.backgroundColor.addEventListener('click', onMenuBackgroundColor, false);
     menu.selector.addEventListener('change', onMenuSelectorChange, false);
-    menu.save.addEventListener('click', onMenuSave, false);
+    //menu.save.addEventListener('click', onMenuSave, false);
     menu.exportImage.addEventListener('click', onMenuExportImage, false);
-    menu.resetBrush.addEventListener('click', onMenuResetBrush, false);
+    //menu.resetBrush.addEventListener('click', onMenuResetBrush, false);
     menu.clear.addEventListener('click', onMenuClear, false);
-    menu.about.addEventListener('click', onMenuAbout, false);
+    //menu.about.addEventListener('click', onMenuAbout, false);
     menu.container.addEventListener('mouseover', onMenuMouseOver, false);
     menu.container.addEventListener('mouseout', onMenuMouseOut, false);
 
@@ -147,8 +147,8 @@ function init()
         }
     }
 
-    foregroundColorSelector.setColor( COLOR );
-    backgroundColorSelector.setColor( BACKGROUND_COLOR );
+    //foregroundColorSelector.setColor( COLOR );
+    //backgroundColorSelector.setColor( BACKGROUND_COLOR );
 
     if (window.location.hash)
     {

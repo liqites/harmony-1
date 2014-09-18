@@ -36,21 +36,21 @@ Menu.prototype =
         this.container.style.position = 'absolute';
         this.container.style.top = '0px';
 
-        this.foregroundColor = newColorWell(color_width, color_height, 'fg-color');
-        this.container.appendChild(this.foregroundColor);
+        //this.foregroundColor = newColorWell(color_width, color_height, 'fg-color');
+        //this.container.appendChild(this.foregroundColor);
 
-        this.setForegroundColor( COLOR );
+        //this.setForegroundColor( COLOR );
 
-        space = document.createTextNode(" ");
-        this.container.appendChild(space);
+        //space = document.createTextNode(" ");
+        //this.container.appendChild(space);
 
-        this.backgroundColor = newColorWell(color_width, color_height, 'bg-color');
-        this.container.appendChild(this.backgroundColor);
+        //this.backgroundColor = newColorWell(color_width, color_height, 'bg-color');
+        //this.container.appendChild(this.backgroundColor);
 
-        this.setBackgroundColor( BACKGROUND_COLOR );
+        //this.setBackgroundColor( BACKGROUND_COLOR );
 
-        space = document.createTextNode(" ");
-        this.container.appendChild(space);
+        //space = document.createTextNode(" ");
+        //this.container.appendChild(space);
 
         this.selector = document.createElement("select");
         this.selector.style.marginRight = '30px';
@@ -68,38 +68,38 @@ Menu.prototype =
         space = document.createTextNode(" ");
         this.container.appendChild(space);
 
-        this.save = document.createElement("span");
-        this.save.className = 'button';
-        this.save.textContent = 'S';
-        this.save.style.marginRight = '16px';
-        this.container.appendChild(this.save);
+        //this.save = document.createElement("span");
+        //this.save.className = 'button';
+        //this.save.textContent = 'S';
+        //this.save.style.marginRight = '16px';
+        //this.container.appendChild(this.save);
 
-        space = document.createTextNode(" | ");
-        this.container.appendChild(space);
+        //space = document.createTextNode(" | ");
+        //this.container.appendChild(space);
 
         this.exportImage = document.createElement("span");
         this.exportImage.className = 'button';
-        this.exportImage.textContent = 'E';
+        this.exportImage.textContent = '下载';
         this.exportImage.style.marginLeft = '16px';
         this.exportImage.style.marginRight = '16px';
         this.container.appendChild(this.exportImage);
 
-        this.resetBrush = document.createElement("span");
-        this.resetBrush.className = 'button';
-        this.resetBrush.textContent = 'R';
-        this.resetBrush.style.marginRight = '16px';
-        this.container.appendChild(this.resetBrush);
+        //this.resetBrush = document.createElement("span");
+        //this.resetBrush.className = 'button';
+        //this.resetBrush.textContent = 'R';
+        //this.resetBrush.style.marginRight = '16px';
+        //this.container.appendChild(this.resetBrush);
 
         this.clear = document.createElement("Clear");
         this.clear.className = 'button';
-        this.clear.textContent = 'C';
+        this.clear.textContent = '清除';
         this.clear.style.marginRight = '16px';
         this.container.appendChild(this.clear);
 
-        this.about = document.createElement("About");
-        this.about.className = 'button';
-        this.about.textContent = '?';
-        this.container.appendChild(this.about);
+        //this.about = document.createElement("About");
+        //this.about.className = 'button';
+        //this.about.textContent = '?';
+        //this.container.appendChild(this.about);
     },
 
     setForegroundColor: function( color )
