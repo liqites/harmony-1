@@ -439,7 +439,7 @@ function onMenuResetBrush()
 
 function onMenuClear()
 {
-    if (!confirm("Are you sure?"))
+    if (!confirm("确定要删除吗?"))
         return;
 
     context.clearRect(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);

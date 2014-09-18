@@ -79,7 +79,7 @@ Menu.prototype =
 
         this.exportImage = document.createElement("span");
         this.exportImage.className = 'button';
-        this.exportImage.textContent = '下载';
+        this.exportImage.textContent = '导出PNG';
         this.exportImage.style.marginLeft = '16px';
         this.exportImage.style.marginRight = '16px';
         this.container.appendChild(this.exportImage);
